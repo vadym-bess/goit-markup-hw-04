@@ -176,9 +176,40 @@ img{
 .photos{
     padding-top: 0;
 }
-    .list-item{
+
+.list-item::before{
+    content: "";
+    display: block;
+    background-color: var(--portfolio-buttons-bgc);
     width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
     }
+.antena::before{
+    background-image: url(../images/antena.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}    
+
+.clock::before{
+    background-image: url(../images/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.computer::before{
+    background-image: url(../images/computer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cosmonaut::before{
+    background-image: url(../images/cosmonaut.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .what-we-do{
     display: flex;
