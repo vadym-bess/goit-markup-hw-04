@@ -63,6 +63,24 @@ li {
 .adress-head li:not(:last-child){
     margin-right: 50px;
 }
+
+.adress-head-item::before{
+    display: block;
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-color: rgb(251, 23, 23);
+    
+}
+
+.link-mail::before{
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/envelope.svg);
+    background-color: rgb(235, 17, 17);
+}
+
 body{
     color: var(--text-color);
     background-color:var(--background-color);
