@@ -60,11 +60,8 @@ li {
     justify-content: right;
     margin-left: auto;
     align-content: center;
+}
 
-}
-.adress-head li:not(:last-child){
-    margin-right: 50px;
-}
 
 body{
     color: var(--text-color);
@@ -83,6 +80,29 @@ body{
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--head-border-color);
+}
+.icon-envelope{
+    align-items: center;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+}
+.icon-smartphone{
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+}
+
+.adress-head-item:hover {
+    fill: var(--accent-color);
+}
+
+.icon-smartphone:hover {
+    flood-color: var(--accent-color);
+}
+
+.adress-head li:not(:last-child) {
+    margin-right: 50px;
 }
 
 .portfolio-header-section{
