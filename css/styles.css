@@ -217,14 +217,9 @@ body{
 }
 
 .social-link {
-    fill: var(--fill-socials);
-    align-items: center;
+    fill: var(--fill-socials); 
 }
 
-.social-link:hover{
-    fill: var(--secont-title-text-color);
-
-}
 
 .area-icon{
     display: flex;
@@ -237,10 +232,16 @@ body{
 
 }
 
-.area-icon:hover,
-.area-icon:focus,
+.area-icon:hover, 
+.area-icon:focus, 
 .area-icon:active{
     background-color: var(--accent-color);
+}
+
+.area-icon:hover .social-link, 
+.area-icon:focus .social-link,
+.area-icon:active .social-link{
+    fill: var(--secont-title-text-color)
 }
 
 
