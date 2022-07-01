@@ -244,6 +244,33 @@ body{
     fill: var(--secont-title-text-color)
 }
 
+.our-clients{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.our-clients-link{
+    fill: var(--fill-socials);
+    border: 1px solid var(--fill-socials);
+    border-radius: 4px;
+}
+
+.our-clients-backgraund:hover .our-clients-link{
+    fill: var(--accent-color);
+}
+
+.our-clients-backgraund:focus .our-clients-link {
+    fill: var(--accent-color);
+}
+
+.our-clients-backgraund:hover .our-clients-link{
+   border-color: var(--accent-color);
+}
+
+.our-clients-backgraund:focus .our-clients-link {
+    border-color: var(--accent-color);
+}
 
 img{
     display: block;
@@ -256,43 +283,17 @@ img{
     padding-top: 0;
 }
 
-.list-item::before{
-    content: "";
-    display: block;
-    background-color: var(--portfolio-buttons-bgc);
-   
-}
-
-
-.clock::before{
-    background-image: url(../images/clock.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.computer::before{
-    background-image: url(../images/computer.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.cosmonaut::before{
-    background-image: url(../images/cosmonaut.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .what-we-do{
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
-    }
+}
 
 .our-team{
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
-    }
+}
 
 .our-team-card{
     padding-bottom: 30px;
@@ -609,6 +610,57 @@ ul{
 
 }
 
-.footer-mail-tel:hover, :focus{
+.footer-mail-tel:hover,
+.footer-mail:hover{
    color: var(--accent-color);
+}
+
+.footer-mail-tel:focus,
+.footer-mail:focus {
+    color: var(--accent-color);
+}
+
+.second-footer-title{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.second-footer-title{
+    color: var(--secont-title-text-color);
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.area-icon-footer {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--secont-title-text-color);
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+.social-link-footer {
+    fill: var(--secont-title-text-color);
+}
+
+.area-icon-footer:hover,
+.area-icon-footer:focus,
+.area-icon-footer:active {
+    background-color: var(--accent-color);
+}
+
+.area-icon-footer:hover .social-link,
+.area-icon-footer:focus .social-link,
+.area-icon-footer:active .social-link {
+    fill: var(--secont-title-text-color)
 }
