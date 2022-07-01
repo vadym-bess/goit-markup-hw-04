@@ -21,6 +21,7 @@ html{
     --light-grey-bgc: #E5E5E5;
     --head-border-color: #ECECEC;
     --portfolio-border-color: #EEEEEE;
+    --fill-socials:#AFB1B8;
 }
 
 a,
@@ -51,8 +52,6 @@ li {
     align-items: center;
     justify-content: space-evenly;
     margin-left: 93px;
-    
-
 }
 
 .adress-head{
@@ -98,7 +97,7 @@ body{
 }
 
 .icon-smartphone:hover {
-    flood-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .adress-head li:not(:last-child) {
@@ -199,13 +198,49 @@ body{
     background-color: var(--portfolio-buttons-bgc);
 }
 
-.icon-antena,
+.icon-antenna,
 .icon-clock,
 .icon-computer,
 .icon-astronaut{
     width: 65.32px;
     height: 70px;
     fill: var(--title-text-color);
+}
+
+
+.socials{
+    display: flex;
+    border: none;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.social-link {
+    fill: var(--fill-socials);
+    align-items: center;
+}
+
+.social-link:hover{
+    fill: var(--secont-title-text-color);
+
+}
+
+.area-icon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--fill-socials);
+
+}
+
+.area-icon:hover,
+.area-icon:focus,
+.area-icon:active{
+    background-color: var(--accent-color);
 }
 
 
@@ -225,7 +260,7 @@ img{
     display: block;
     background-color: var(--portfolio-buttons-bgc);
    
-    }
+}
 
 
 .clock::before{
@@ -264,7 +299,7 @@ img{
     
 }
 
-.our-team li{
+.our-team > li{
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -286,7 +321,7 @@ img{
 }
 
 .profesions{
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     text-align: center;
     color: var(--text-color);
     font-family: 'Roboto',sans-serif;
