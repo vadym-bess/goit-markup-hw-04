@@ -623,19 +623,12 @@ ul{
     display: flex;
     border: none;
     justify-content: center;
-    gap: 22px;
+    gap: 10px;
     margin-bottom:0px;
 }
 
 .second-footer-title{
     display: flex;
-    justify-content: center;
-    
-}
-
-.second-footer-title{
-    display: flex;
-    justify-content: center;
     color: var(--secont-title-text-color);
     font-family: 'Roboto' sans-serif;
     font-style: normal;
@@ -644,6 +637,7 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .area-icon-footer{
@@ -673,15 +667,19 @@ ul{
     fill: var(--secont-title-text-color)
 }
 
-.div{
+.div-main{
     display: flex;
 }
 
-.div2{
+.div1{
     display: block;
 }
 
-.div3{
-    display: inline-block
-    ;
+.div2{
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.second-footer-title{
+    
 }
