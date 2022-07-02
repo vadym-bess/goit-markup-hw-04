@@ -80,16 +80,10 @@ body{
     padding-bottom: 25px;
     border-bottom: 1px solid var(--head-border-color);
 }
-.icon-envelope{
+
+.adress-head-item{
+    display: flex;
     align-items: center;
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
-}
-.icon-smartphone{
-    margin-right: 10px;
-    width: 10px;
-    height: 16px;
 }
 
 .adress-head-item:hover {
@@ -518,7 +512,8 @@ ul{
 
 
 .tel {
-    display: inline-block;
+    display: flex;
+    gap: 10px;
     text-decoration: none;
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
@@ -526,10 +521,12 @@ ul{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    align-items: center;
 }
 
 .link-mail{
-    display: inline-block;
+    display: flex;
+    gap: 10px;
     text-decoration: none;
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
@@ -537,6 +534,11 @@ ul{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    align-items: center;
+}
+
+.envelope{
+    margin-right: 10px;
 }
 
 .link-mail:hover, :focus{
@@ -571,7 +573,6 @@ ul{
 }
 
 .footer-adress{
-    display: inline-block;
     margin: 0;
     margin-bottom: 9px;
     color: var(--secont-title-text-color);
@@ -584,7 +585,6 @@ ul{
 }
 
 .footer-mail {
-    display: inline-block;
     margin-top: 0;
     margin-bottom: 9px;
     color: var(--footer-adress-color);
@@ -597,7 +597,6 @@ ul{
 }
 
 .footer-mail-tel{
-    display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     color: var(--footer-adress-color);
@@ -620,6 +619,14 @@ ul{
     color: var(--accent-color);
 }
 
+.socials-footer{
+    display: flex;
+    border: none;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom:0px;
+}
+
 .second-footer-title{
     display: flex;
     justify-content: center;
@@ -627,6 +634,8 @@ ul{
 }
 
 .second-footer-title{
+    display: flex;
+    justify-content: center;
     color: var(--secont-title-text-color);
     font-family: 'Roboto' sans-serif;
     font-style: normal;
@@ -637,7 +646,7 @@ ul{
     text-transform: uppercase;
 }
 
-.area-icon-footer {
+.area-icon-footer{
     display: flex;
     width: 40px;
     height: 40px;
@@ -646,7 +655,6 @@ ul{
     border-radius: 50%;
     fill: var(--secont-title-text-color);
     background: rgba(255, 255, 255, 0.1);
-
 }
 
 .social-link-footer {
@@ -663,4 +671,17 @@ ul{
 .area-icon-footer:focus .social-link,
 .area-icon-footer:active .social-link {
     fill: var(--secont-title-text-color)
+}
+
+.div{
+    display: flex;
+}
+
+.div2{
+    display: block;
+}
+
+.div3{
+    display: inline-block
+    ;
 }
