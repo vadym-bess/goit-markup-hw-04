@@ -543,7 +543,8 @@ ul{
     text-decoration: none;
 }
 
-.card-link-portfolio:hover, :focus{
+.card-link-portfolio:hover, 
+.card-link-portfolio:focus{
     border: 1px solid var(--portfolio-border-color);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
