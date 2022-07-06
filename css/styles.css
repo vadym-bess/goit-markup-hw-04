@@ -274,7 +274,7 @@ body{
     border-radius: 4px;
 }
 
-.our-clients-backgraund:hover {
+.our-clients-backgraund:hover{
     border-color: var(--accent-color);
 }
 
@@ -539,13 +539,11 @@ ul{
 .card-link-portfolio{
     display: block;
     width: 370px;
-    height: 400px;
     text-decoration: none;
 }
 
 .card-link-portfolio:hover, 
 .card-link-portfolio:focus{
-    border: 1px solid var(--portfolio-border-color);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
